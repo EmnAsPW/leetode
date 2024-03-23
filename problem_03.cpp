@@ -1,3 +1,10 @@
+#include <iostream>
+#include <string>
+#include <unordered_map>
+#include <algorithm>
+
+using namespace std;
+
 class Solution
 {
 public:
@@ -28,3 +35,23 @@ public:
         return ans;
     }
 };
+
+int main()
+{
+    Solution sol;
+
+    // Test cases
+    string test1 = "abcabcbb";
+    cout << "Length of the longest substring without repeating characters in '" << test1 << "' is: "
+         << sol.lengthOfLongestSubstring(test1) << endl;
+
+    string test2 = "bbbbb";
+    cout << "Length of the longest substring without repeating characters in '" << test2 << "' is: "
+         << sol.lengthOfLongestSubstring(test2) << endl;
+
+    string test3 = "pwwkew";
+    cout << "Length of the longest substring without repeating characters in '" << test3 << "' is: "
+         << sol.lengthOfLongestSubstring(test3) << endl;
+
+    return 0;
+}
